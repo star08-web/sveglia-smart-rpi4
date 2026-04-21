@@ -19,4 +19,5 @@ chmod o+r /usr/share/keyrings/caddy-stable-archive-keyring.gpg
 chmod o+r /etc/apt/sources.list.d/caddy-stable.list
 apt update
 apt install caddy
-
+curl https://raw.githubusercontent.com/star08-web/sveglia-smart-rpi4/refs/heads/main/Caddyfile -o /etc/caddy/Caddyfile
+systemctl reload caddy
